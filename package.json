@@ -8,7 +8,7 @@
     "test": "nyc --reporter=html mocha --timeout 10000 src/tests/*.js",
     "test:prod": "cross-env NODE_ENV=production npm t",
     "prod": "cross-env NODE_ENV=production pm2-runtime api.js",
-    "postinstall": "npm run test:prod "
+    "postinstall": "npm t"
   },
   "keywords": [],
   "author": "",
